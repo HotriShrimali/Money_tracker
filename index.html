@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Money Tracker WebApp</title>
+</head>
+
+<body>
+    <h1>My Money Tracker</h1>
+    <div class="Input-section">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="College-fee">College fee</option>
+            <option value="Food">Food</option>
+            <option value="Stationary">Stationary</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Shoping">Shoping</option>
+            <option value="Trip">Trip</option>
+            <option value="Other-expenses">Other Expenses</option>
+        </select>
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input">
+        <label for="type-input">Type:</label>
+        <input type="text" id="type-input">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input">
+        <button id="add-btn">Add</button>
+    </div>
+    <div class="expenses-list">
+        <h2>Expenses List</h2>
+        <table>
+            <thead>
+
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+
+            </thead>
+            <tbody id="expense-table-body">
+
+            </tbody>
+            <tfoot>
+                <td>Total:</td>
+                <td id="total-amount"></td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
